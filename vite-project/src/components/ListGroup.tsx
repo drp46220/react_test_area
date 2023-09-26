@@ -3,15 +3,15 @@
 //      '<>' the functionality will be the same
 
 function ListGroup() {
+  const listItems = ["nyc", "orlando", "stl", "kansas city"];
+
   return (
     <>
       <h1>List:</h1>
       <ul className="list-group">
-        <li className="list-group-item">An item</li>
-        <li className="list-group-item">A second item</li>
-        <li className="list-group-item">A third item</li>
-        <li className="list-group-item">A fourth item</li>
-        <li className="list-group-item">And a fifth one</li>
+        {listItems.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
       </ul>
     </>
   );
