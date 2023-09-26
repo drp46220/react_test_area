@@ -4,10 +4,12 @@
 
 function ListGroup() {
   const listItems = ["nyc", "orlando", "stl", "kansas city"];
+  const emptyListMessage = listItems.length === 0 ? <p>no items</p> : null;
 
   return (
     <>
       <h1>List:</h1>
+      {emptyListMessage}
       <ul className="list-group">
         {listItems.map((item) => (
           <li key={item}>{item}</li>
