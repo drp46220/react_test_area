@@ -1,6 +1,6 @@
 // import { Fragment } from "react";
-// if you wrap your template code in empty angle brackets
-// '<>' the functionality will be the same
+//      if you wrap your template code in empty angle brackets
+//      '<>' the functionality will be the same
 
 function ListGroup() {
   return (
